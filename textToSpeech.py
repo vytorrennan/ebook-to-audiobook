@@ -5,13 +5,16 @@ import ebooklib
 from ebooklib import epub
 
 
+ebookLocation = "./algoritms.epub"
+
+
 def chapterToString(chapter):
     soup = BeautifulSoup(chapter.get_body_content(), "html.parser")
     text = [p.get_text() for p in soup.find_all("p")]
     return (" ".join(text)).replace(";", "").replace('"', '\\"')
 
 
-book = epub.read_epub("DesmistificandoAlgoritmosThomasHCormen2013.epub")
+book = epub.read_epub(ebookLocation)
 chapters = list(book.get_items_of_type(ebooklib.ITEM_DOCUMENT))
 
 chapterStrings = []
