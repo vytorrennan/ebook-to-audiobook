@@ -1,3 +1,7 @@
+audiobook/
+pt_BR-faber-medium.onnx
+pt_BR-faber-medium.onnx.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
