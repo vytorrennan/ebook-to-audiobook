@@ -1,6 +1,8 @@
 audiobook/
 pt_BR-faber-medium.onnx
 pt_BR-faber-medium.onnx.json
+en_US-joe-medium.onnx
+en_US-joe-medium.onnx.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

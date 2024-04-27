@@ -6,6 +6,9 @@ from ebooklib import epub
 
 
 ebookLocation = "./algoritms.epub"
+quality = "medium"
+language = "en_US"
+voice = "joe"
 
 
 def chapterToString(chapter):
@@ -31,5 +34,5 @@ for text in chapterStrings:
     filename = f"part{currentPart}"
 
     system(f"echo '{text}' | piper \
-  --model pt_BR-faber-medium \
+  --model {language}-{voice}-{quality} \
   --output_file audiobook/{filename}.wav")
